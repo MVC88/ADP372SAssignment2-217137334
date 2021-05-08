@@ -20,18 +20,26 @@ public class AppTest
      * Rigorous Test :-)
      */
 
-    public void shouldAnswerWithTrue()
+
+
+    @Test
+    public void add()
     {
         listA.add(0,"dog");
-        listA.add(1,"cat");
-        listA.add(2,"bird");
 
-
+        assert(listA).contains("dog");
     }
 
     @Test
-    public void testObjectEquality(){
-          }
+    public void remove()
+    {
+        listA.add(0,"dog");
+
+        listA.remove(0);
+        assert(listA.isEmpty());
+
+
+    }
 
 
 }
