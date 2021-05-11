@@ -13,7 +13,8 @@ import java.util.List;
 public class AppTest 
 {
 
-    List listA = new ArrayList();
+    ArrayList<Object> listA = new App("");
+
 
 
     /**
@@ -26,20 +27,10 @@ public class AppTest
     public void add()
     {
         listA.add(0,"dog");
-
         assert(listA).contains("dog");
     }
 
-    @Test
-    public void remove()
-    {
-        listA.add(0,"dog");
 
-        listA.remove(0);
-        assert(listA.isEmpty());
-
-
-    }
 
 
 }
