@@ -4,7 +4,6 @@ package za.ac.cput.ADP372SAssignment2;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.IntFunction;
 
 /**
  * Hello world!
@@ -14,24 +13,20 @@ import java.util.function.IntFunction;
 
 
 
-public class App extends ArrayList<String> {
-    private String name;
+public class App  {
 
+    private List<String> listA;
 
-    public App(String name) {
-        this.name = name;
+    public App() {
+        listA = new ArrayList<String>();
+        listA.add("Cat");
+        listA.add("Snake");
+        listA.add("Bird");
+
     }
 
-    public String getName() {
-        return name;
+    public List<String> getList() {
+        return listA;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public <T> T[] toArray(IntFunction<T[]> generator) {
-        return null;
-    }
 }

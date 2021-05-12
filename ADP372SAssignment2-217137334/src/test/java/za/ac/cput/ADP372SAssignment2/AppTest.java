@@ -13,25 +13,12 @@ import java.util.List;
  */
 public class AppTest
 {
-
-    List<String> listA = new ArrayList<>();
-
-
-
-
-
-
-
-
-    /**
-     * Rigorous Test :-)
-     */
-
-
+    private App Apps;
 
     @Test
     public void listAdd()
-    {
+    {   Apps = new App();
+        List<String> listA = Apps.getList();
         listA.add("dog");
         assert(listA).contains("dog");
     }
@@ -39,9 +26,11 @@ public class AppTest
     @Test
     public void listRemove()
     {
+        Apps = new App();
+        List<String> listA = Apps.getList();
         listA.add("dog");
-        listA.remove(0);
-        assert(listA).isEmpty();
+        listA.remove(3);
+
 
     }
 @Test
@@ -49,6 +38,8 @@ public class AppTest
 {
 
 
+
 }
+
 
 }
