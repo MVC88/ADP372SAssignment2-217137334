@@ -28,9 +28,8 @@ public class AppTest
     {
         Apps = new App();
         List<String> listA = Apps.getList();
-        listA.add("dog");
-        listA.remove(3);
-
+        listA.remove(2);
+        assertEquals(2,listA.size());
 
     }
 @Test
