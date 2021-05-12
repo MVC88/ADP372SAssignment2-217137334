@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -35,8 +36,10 @@ public class AppTest
 @Test
     public void listFind()
 {
-
-
+    Apps = new App();
+    List<String> listA = Apps.getList();
+    int found = listA.indexOf("Snake");
+     assertEquals(1,found);
 
 }
 
