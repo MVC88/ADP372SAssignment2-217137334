@@ -2,18 +2,24 @@ package za.ac.cput.ADP372SAssignment2;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import java.util.Collection;
+
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest
 {
 
-    ArrayList<Object> listA = new App("");
+    List<String> listA = new ArrayList<>();
+
+
+
+
+
 
 
 
@@ -24,13 +30,25 @@ public class AppTest
 
 
     @Test
-    public void add()
+    public void listAdd()
     {
-        listA.add(0,"dog");
+        listA.add("dog");
         assert(listA).contains("dog");
     }
 
+    @Test
+    public void listRemove()
+    {
+        listA.add("dog");
+        listA.remove(0);
+        assert(listA).isEmpty();
+
+    }
+@Test
+    public void listFind()
+{
 
 
+}
 
 }

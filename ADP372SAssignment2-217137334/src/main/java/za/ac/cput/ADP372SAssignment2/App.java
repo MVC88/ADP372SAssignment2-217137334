@@ -14,9 +14,9 @@ import java.util.function.IntFunction;
 
 
 
-public class App extends ArrayList<Object> {
+public class App extends ArrayList<String> {
     private String name;
-    List listA = new ArrayList();
+
 
     public App(String name) {
         this.name = name;
