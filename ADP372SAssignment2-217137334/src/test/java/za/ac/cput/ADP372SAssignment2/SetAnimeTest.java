@@ -15,7 +15,7 @@ class SetAnimeTest {
     {
     Anime = new SetAnime();
     Set<String> setA = Anime.getAnimeSet();
-    setA.add("Steins Gate");
+    setA.add("Steins Gate");// will be inserted in a position according to hash number
     assertTrue(setA.contains("Steins Gate"));
     System.out.println(setA);
     }
