@@ -3,8 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -19,16 +18,17 @@ public class AppTest
     @Test
     public void listAdd()
     {   Apps = new App();
-        List<String> listA = Apps.getList();
-        listA.add("dog");
-        assert(listA).contains("dog");
+        List<App> listA = Apps.getList();
+        App pet2 =new App(2,"dog",1);
+        listA.add(pet2);
+        assert(listA).contains(pet2);
     }
 
     @Test
     public void listRemove()
     {
         Apps = new App();
-        List<String> listA = Apps.getList();
+        List<App> listA = Apps.getList();
         listA.remove(2);
         assertEquals(2,listA.size());
 
@@ -37,9 +37,9 @@ public class AppTest
     public void listFind()
 {
     Apps = new App();
-    List<String> listA = Apps.getList();
-    int found = listA.indexOf("Snake");
-     assertEquals(1,found);
+    List<App> listA = Apps.getList();
+     boolean found = listA.contains(listA.get(2));
+     assertEquals(true,found);
 
 }
 
