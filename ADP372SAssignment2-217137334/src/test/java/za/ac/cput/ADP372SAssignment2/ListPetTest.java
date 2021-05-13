@@ -13,13 +13,13 @@ import java.util.List;
  * Unit test for ListPet.
  */
 
-public class ListPetTest {
-    private ListPet Apps;
+class ListPetTest {
+    private ListPet Pets;
 
     @Test
     public void listAdd() {  //Add
-        Apps = new ListPet();
-        List<ListPet> listA = Apps.getList();
+        Pets = new ListPet();
+        List<ListPet> listA = Pets.getList();
         ListPet pet2 = new ListPet(2, "dog", 1);
         listA.add(pet2);
         assert (listA).contains(pet2);
@@ -27,8 +27,8 @@ public class ListPetTest {
 
     @Test
     public void listRemove() { //Remove
-        Apps = new ListPet();
-        List<ListPet> listA = Apps.getList();
+        Pets = new ListPet();
+        List<ListPet> listA = Pets.getList();
         listA.remove(2);
         assertEquals(2, listA.size());
 
@@ -36,8 +36,8 @@ public class ListPetTest {
 
     @Test
     public void listFind() { //Find
-        Apps = new ListPet();
-        List<ListPet> listA = Apps.getList();
+        Pets = new ListPet();
+        List<ListPet> listA = Pets.getList();
         boolean found = listA.contains(listA.get(2));
         assertTrue(found);
 
