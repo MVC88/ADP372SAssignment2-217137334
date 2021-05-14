@@ -31,9 +31,23 @@ public class ListPet {
         listA.add(new ListPet(8, "bird", 1));
     }
 
+
+
+    public String getName() {
+        return name;
+    }
+
+
     public List<ListPet> getList() {
         return listA;
     }
 
-
+    @Override
+    public String toString() {
+        return "ListPet{" +
+                "num=" + num +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

@@ -1,8 +1,13 @@
 package za.ac.cput.ADP372SAssignment2;
 
+//Malcolm Camelo
+// student number :217137334
+
+
 import org.junit.jupiter.api.Test;
 
 
+import java.util.Optional;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,6 +33,15 @@ class SetAnimeTest {
         setA.remove("Gintama");
         assertFalse(setA.contains("Gintama"));
     }
+
+@Test
+    public void setFind()
+{
+    Anime = new SetAnime();
+    Set<String> setA = Anime.getAnimeSet();
+    Optional<String> found = setA.stream().findFirst();
+    System.out.println(found);
+}
 
 
 }

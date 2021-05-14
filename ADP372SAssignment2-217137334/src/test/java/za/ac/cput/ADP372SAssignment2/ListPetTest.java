@@ -5,8 +5,10 @@ package za.ac.cput.ADP372SAssignment2;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import java.util.List;
 
+
+import java.util.List;
+import java.util.stream.Stream;
 
 
 /**
@@ -38,8 +40,9 @@ class ListPetTest {
     public void listFind() { //Find
         Pets = new ListPet();
         List<ListPet> listA = Pets.getList();
-        boolean found = listA.contains(listA.get(2));
-        assertTrue(found);
+        Stream<ListPet> found = listA.stream().filter(listPet -> "snake".equals(listPet.getName()));
+        found.forEach(s -> System.out.println(s));
+
 
     }
 
