@@ -25,7 +25,7 @@ public class ListPet {
 
 
     public ListPet() {
-        listA = new ArrayList<ListPet>();
+        listA = new ArrayList<>();
         listA.add(new ListPet(1, "fish", 1));
         listA.add(new ListPet(5, "snake", 1));
         listA.add(new ListPet(8, "bird", 1));

@@ -8,22 +8,43 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SetAnime {
-    private Set<String> animeSet;
+    private Set<SetAnime> animeSet;
+
+    int Rank;
+    String name;
+
+    public SetAnime(int rank, String name) {
+        Rank = rank;
+        this.name = name;
+    }
 
     public SetAnime()
     {
 
          animeSet = new HashSet<>();
 
-        animeSet.add("One Piece");
-        animeSet.add("Gintama");
-        animeSet.add("Hunter X Hunter");
-        animeSet.add("Attack on Titan");
-        animeSet.add("Demon Slayer");
+        animeSet.add(new SetAnime(1,"One Piece"));
+        animeSet.add(new SetAnime(2,"Gintama"));
+        animeSet.add(new SetAnime(3,"Attack on titan"));
+        animeSet.add(new SetAnime(4,"Chainsaw man"));
+        animeSet.add(new SetAnime(1,"Demon Slayer"));
 
       }
 
-    public Set<String> getAnimeSet() {
+    public Set<SetAnime> getAnimeSet() {
         return animeSet;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "SetAnime{" +
+                "Rank=" + Rank +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

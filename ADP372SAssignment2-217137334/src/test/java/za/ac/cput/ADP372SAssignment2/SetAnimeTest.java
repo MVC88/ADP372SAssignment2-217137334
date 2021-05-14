@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,17 +20,18 @@ class SetAnimeTest {
     public void setAdd()
     {
     Anime = new SetAnime();
-    Set<String> setA = Anime.getAnimeSet();
-    setA.add("Steins Gate");// will be inserted in a position according to hash number
-    assertTrue(setA.contains("Steins Gate"));
-    System.out.println(setA);
+    Set<SetAnime> setA = Anime.getAnimeSet();
+    SetAnime ani = new SetAnime(1, "Steins;Gate");;// will be inserted in a position according to hash number
+        setA.add(ani);
+        assertTrue(setA.contains(ani));
+
     }
 
     @Test
     public void setRemove()
     {
         Anime = new SetAnime();
-        Set<String> setA = Anime.getAnimeSet();
+        Set<SetAnime> setA = Anime.getAnimeSet();
         setA.remove("Gintama");
         assertFalse(setA.contains("Gintama"));
     }
@@ -38,9 +40,9 @@ class SetAnimeTest {
     public void setFind()
 {
     Anime = new SetAnime();
-    Set<String> setA = Anime.getAnimeSet();
-    Optional<String> found = setA.stream().findFirst();
-    System.out.println(found);
+    Set<SetAnime> setA = Anime.getAnimeSet();
+    Stream<SetAnime> found = setA.stream().filter(SetAnime -> "Chainsaw man".equals(SetAnime.getName()));
+    found.forEach(s -> System.out.println(s));
 }
 
 
