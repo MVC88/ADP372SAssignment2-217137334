@@ -40,7 +40,7 @@ class ListPetTest {
     public void listFind() { //Find
         Pets = new ListPet();
         List<ListPet> listA = Pets.getList();
-        Stream<ListPet> found = listA.stream().filter(listPet -> "bird".equals(listPet.getName()));
+        Stream<ListPet> found = listA.stream().filter(listPet -> "snake".equals(listPet.getName()));
         found.forEach(s -> System.out.println(s));
 
 

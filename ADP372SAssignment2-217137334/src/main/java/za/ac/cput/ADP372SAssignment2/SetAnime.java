@@ -18,18 +18,17 @@ public class SetAnime {
         this.name = name;
     }
 
-    public SetAnime()
-    {
+    public SetAnime() {
 
-         animeSet = new HashSet<>();
+        animeSet = new HashSet<>();
 
-        animeSet.add(new SetAnime(1,"One Piece"));
-        animeSet.add(new SetAnime(2,"Gintama"));
-        animeSet.add(new SetAnime(3,"Attack on titan"));
-        animeSet.add(new SetAnime(4,"Chainsaw man"));
-        animeSet.add(new SetAnime(1,"Demon Slayer"));
+        animeSet.add(new SetAnime(1, "One Piece"));
+        animeSet.add(new SetAnime(2, "Gintama"));
+        animeSet.add(new SetAnime(3, "Attack on titan"));
+        animeSet.add(new SetAnime(4, "Chainsaw man"));
+        animeSet.add(new SetAnime(5, "Demon Slayer"));
 
-      }
+    }
 
     public Set<SetAnime> getAnimeSet() {
         return animeSet;

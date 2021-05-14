@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-
 public class ListPet {
 
     private List<ListPet> listA;
@@ -30,7 +28,6 @@ public class ListPet {
         listA.add(new ListPet(5, "snake", 1));
         listA.add(new ListPet(8, "bird", 1));
     }
-
 
 
     public String getName() {
