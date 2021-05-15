@@ -6,11 +6,11 @@ package za.ac.cput.ADP372SAssignment2;
 
 import org.junit.jupiter.api.Test;
 
-
 import java.util.Set;
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SetAnimeTest {
     private SetAnime Anime;

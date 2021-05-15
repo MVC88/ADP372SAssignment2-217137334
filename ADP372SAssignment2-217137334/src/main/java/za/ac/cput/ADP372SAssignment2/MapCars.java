@@ -11,8 +11,7 @@ public class MapCars {
 
     private Map<String, String> mapA;
 
-    public MapCars()
-    {
+    public MapCars() {
 
         mapA = new HashMap<>();
         mapA.put("Car1", "Jeep");

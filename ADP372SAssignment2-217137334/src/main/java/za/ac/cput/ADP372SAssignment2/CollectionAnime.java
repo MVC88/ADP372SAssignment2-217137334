@@ -8,11 +8,10 @@ import java.util.HashSet;
 
 public class CollectionAnime {
 
-    Collection<String> animeCollection ;
+    Collection<String> animeCollection;
 
 
-    public CollectionAnime()
-    {
+    public CollectionAnime() {
 
         animeCollection = new HashSet<>();
         animeCollection.add("Bleach");
@@ -24,7 +23,6 @@ public class CollectionAnime {
     public Collection<String> getAnimeCollection() {
         return animeCollection;
     }
-
 
 
 }

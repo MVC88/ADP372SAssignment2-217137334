@@ -5,10 +5,11 @@ package za.ac.cput.ADP372SAssignment2;
 
 
 import org.junit.jupiter.api.Test;
+
 import java.util.Map;
 
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MapCarsTest {
     private MapCars Cars;
@@ -34,8 +35,8 @@ class MapCarsTest {
     public void MapFind() { //Find
         Cars = new MapCars();
         Map<String, String> mapA = Cars.getMapA();
-        System.out.println(mapA.get("Car1"));
-        assertTrue(mapA.containsKey("Car1"));
+        boolean found = mapA.containsKey("Car1");
+        assertTrue(found);
 
     }
 

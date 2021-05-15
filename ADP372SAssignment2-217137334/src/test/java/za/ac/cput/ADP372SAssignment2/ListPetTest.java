@@ -3,12 +3,12 @@ package za.ac.cput.ADP372SAssignment2;
 //Malcolm Camelo
 // student number :217137334
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-
 
 import java.util.List;
 import java.util.stream.Stream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 /**
