@@ -19,7 +19,7 @@ class SetAnimeTest {
     public void setAdd() {
         Anime = new SetAnime();
         Set<SetAnime> setA = Anime.getAnimeSet();
-        SetAnime ani = new SetAnime(1, "Steins;Gate");
+        SetAnime ani = new SetAnime(6, "Steins;Gate");
         ;// will be inserted in a position according to hash number
         setA.add(ani);
         assertTrue(setA.contains(ani));
